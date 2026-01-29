@@ -1,0 +1,56 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: #0b0f14;
+    color: #d7e0ea;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+}
+
+.terminal {
+    width: min(900px, 92vw);
+    height: min(620px, 85vh);
+    background: #0f1620;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 16px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    gap: 12px;
+}
+
+.output {
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.25);
+}
+
+.line {
+    margin: 0 0 8px;
+    white-space: pre-wrap;
+}
+
+.inputRow {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 10px 12px;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.35);
+    border: 1px solid rgba(255,255,255,0.08);
+}
+
+.prompt {
+    color: #66ff99
+}
+
+.input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: inherit;
+    font-size: 16px;
+}
